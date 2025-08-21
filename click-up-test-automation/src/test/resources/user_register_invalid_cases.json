@@ -1,0 +1,48 @@
+[
+  {
+    "testId": "TC01",
+    "fullName": "",
+    "professionalEmail": "",
+    "professionalEmailToConfirm": "",
+    "password": "",
+    "passwordToConfirm": "",
+    "expectedFullNameError": "signup.fullname.required",
+    "expectedEmailError": "signup.email.required",
+    "expectedPasswordError": "signup.password.required",
+    "expectedEmailConfirmError": "signup.email.confirmation.required",
+    "expectedPasswordConfirmError": "signup.password.confirmation.required",
+    "shouldSucceed": false,
+    "testCaseDescription": "All fields are empty"
+  },
+  {
+    "testId": "TC02",
+    "fullName": "",
+    "professionalEmail": "juan.perez(at)example.com",
+    "professionalEmailToConfirm": "juan.perez(at)example.com",
+    "password": "",
+    "passwordToConfirm": "",
+    "expectedFullNameError": "signup.fullname.required",
+    "expectedEmailError": "signup.email.invalid",
+    "expectedPasswordError": "signup.password.required",
+    "expectedEmailConfirmError": "signup.email.confirmation.required",
+    "expectedPasswordConfirmError": "signup.password.confirmation.required",
+    "shouldSucceed": false,
+    "testCaseDescription": "Invalid email format"
+  },
+  {
+    "testId": "TC03",
+    "fullName": "",
+    "professionalEmail": "",
+    "professionalEmailToConfirm": "",
+    "password": "123",
+    "passwordToConfirm": "",
+    "expectedFullNameError": "signup.fullname.required",
+    "expectedEmailError": "signup.email.required",
+    "expectedPasswordError": "signup.password.length.minimum",
+    "expectedEmailConfirmError": "signup.email.confirmation.required",
+    "expectedPasswordConfirmError": "signup.password.confirmation.required",
+    "shouldSucceed": false,
+    "testCaseDescription": "Invalid password length"
+  }
+  //to do password policy test
+]

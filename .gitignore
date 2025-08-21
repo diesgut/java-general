@@ -1,0 +1,58 @@
+### Archivos de IDE ###
+# Ignora los archivos específicos del entorno de desarrollo local.
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+
+### Archivos de Build y Dependencias ###
+# Ignora los directorios y archivos generados durante la compilación.
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+
+### Archivos de Salida de Pruebas ###
+# Ignora los reportes y resultados generados por los tests.
+test-output/
+/hs_err_pid*
+
+
+### Archivos Compilados de Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+
+### Otros ###
+# Ignora archivos de log, temporales y del sistema operativo.
+*.log
+*~
+*.tmp
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
